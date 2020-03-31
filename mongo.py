@@ -6,7 +6,7 @@ if path.exists("env.py"):
   import env 
 
 MONGODB_URI = os.getenv("MONGO_URI")
-DBS_NAME = "mytestdb"
+DBS_NAME = "mytTestDB"
 COLLECTION_NAME = "myFirstMDB"
 
 def mongo_connect(url):
