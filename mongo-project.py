@@ -84,31 +84,3 @@ conn = mongo_connect(MONGODB_URI)
 coll = conn[DBS_NAME][COLLECTION_NAME]
 
 main_loop()
-
-    option = input("Enter option: ")
-    return option
-
-
-def main_loop():
-    while True:
-        option = show_menu()
-        if option == "1":
-            print("You have selected option 1")
-        elif option == "2":
-            print("You have selected option 2")
-        elif option == "3":
-            print("You have selected option 3")
-        elif option == "4":
-            print("You have selected option 4")
-        elif option == "5":
-            conn.close()
-            break
-        else:
-            print("Invalid option")
-        print("")
-
-
-conn = mongo_connect(MONGODB_URI)
-coll = conn[DBS_NAME][COLLECTION_NAME]
-
-main_loop()
